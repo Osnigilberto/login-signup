@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## Login e Cadastro
+Este projeto é uma interface de autenticação com funcionalidades de login e cadastro. Ele permite que os usuários criem uma conta ou façam login em uma plataforma. O design é responsivo e utiliza React para a estrutura de componentes e integração com o back-end.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Funcionalidades
+<b>Cadastro de Usuário:</b> Permite criar uma nova conta com e-mail, senha e nome de usuário.
 
-## Available Scripts
+<b>Login de Usuário:</b> Permite login com e-mail e senha cadastrados.
 
-In the project directory, you can run:
+<b>Validação de Campos:</b> Todos os campos são validados antes do envio.
 
-### `npm start`
+<b>Feedback ao Usuário:</b> Mostra mensagens de erro ou sucesso para o usuário.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<b>Design Responsivo:</b> A interface se adapta a diferentes tamanhos de tela.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
+<b>React:</b> Biblioteca JavaScript para construir interfaces de usuário.
 
-### `npm test`
+<b>CSS Modules / Styled Components:</b> Para estilização dos componentes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<b>FontAwesome:</b> Ícones usados para o design da interface.
 
-### `npm run build`
+<B>Backend (opcional):</b> API para validação e autenticação de dados (Node.js, Express, etc.).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estrutura do Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```plaintext
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+login-signup/
+├── public/
+│   ├── index.html            # Estrutura HTML principal
+├── src/
+│   ├── assets/               # Imagens e ícones
+│   ├── components/           # Componentes reutilizáveis
+│   │   ├── LoginForm.jsx     # Componente de formulário de login
+│   │   ├── SignupForm.jsx    # Componente de formulário de cadastro
+│   ├── App.jsx               # Componente raiz do aplicativo
+│   ├── index.js              # Arquivo principal do React
+│   ├── styles/               # Estilos gerais do projeto
+│   │   ├── App.css           # Estilos principais da aplicação
+│   ├── services/             # Serviços de integração com API
+│   │   ├── authService.js    # Funções de autenticação com API
+├── README.md                 # Documentação do projeto
+└── package.json              # Dependências e scripts
+```
 
-### `npm run eject`
+## Como Usar
+#### Cadastro: Insira um e-mail, nome de usuário e senha para criar uma nova conta. Todos os campos são obrigatórios.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Login: Use as credenciais cadastradas para fazer login. O sistema valida o e-mail e a senha.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Feedback: O usuário recebe mensagens sobre o status do cadastro ou login (sucesso ou erro).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
